@@ -1,7 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="description" content="Online Store: Everything from A to Z" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Fillable Template: Work Order" />
     <link rel="stylesheet" href="/reset-fonts-grids.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
     <script type='text/javascript' src='/jquery-1.4.2.js'></script>
@@ -11,440 +12,636 @@
   <body>
     <div id="pagewrap">
       <div id="workorder">Work Order</div>
-      <div id="logo">
-        <div id="logoctr">
-          <a href="javascript:;" id="change-logo" title="Change logo">Change Logo</a>
-          <a href="javascript:;" id="save-logo" title="Save changes">Save</a>
-          |
-          <a href="javascript:;" id="delete-logo" title="Delete logo">Delete Logo</a>
-          <a href="javascript:;" id="cancel-logo" title="Cancel changes">Cancel</a>
+      <div id="header">
+        <div id="logo">
+          <img id="image" src="images/logo.jpg" alt="logo" />
         </div>
-        <div id="logohelp">
-          <input id="imageloc" size="50" value="" type="text"><br>
-          (max width: 360px, max height: 100px)
-        </div>
-        <img id="image" src="images/logo.jpg" alt="logo" height="100px" weight="360px">
+        <table id="meta">
+          <tbody>
+            <tr>
+              <td class="meta-head">Date</td>
+              <td><input type="text" value="[Enter a Date]" /></td>
+            </tr>
+            <tr>
+              <td class="meta-head">W.O. #</td>
+              <td><input type="text" value="[100]" /></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clear"></div>
       </div>
-      <div id="slogan">
-        <textarea id="compslogan">[Your company slogan]</textarea>
-      </div>
-      <table id="meta">
-        <tbody>
-          <tr>
-            <td class="meta-head">Date</td>
-            <td><textarea>[Enter a date]</textarea></td>
-          </tr>
-          <tr>
-            <td class="meta-head">W.O. #</td>
-            <td><textarea id="date">[100]</textarea></td>
-          </tr>
-        </tbody>
-      </table>
-      <div id="line"></div>
-      <div id="address">
-        <textarea id="companyinfo">[Your Company Name] 
+        <div id="line"></div>
+        <div id="address">
+          <div class="label">FROM</div>
+            <textarea class="companyinfo" rows="6" cols="34">
+[Your Company Name] 
 [Street Address] 
 [City, ST Zip Code]
 Phone [000-000-0000] 
 Fax [000-000-0000] 
 [e-mail]</textarea>
-        <div id="to">TO</div>
-        <textarea id="customerinfo">[Name] 
+          <div class="label">TO</div>
+            <textarea class="companyinfo" rows="6" cols="34">
+[Name] 
 [Company Name] 
 [Street Address] 
 [City, ST Zip Code] 
 Phone [000-000-0000] 
 Customer ID [ABC123]</textarea>
-        <div id="to">JOB</div>
-        <textarea id="jobdesc">[Job Description]</textarea>  
-      </div>
+          <div class="label">JOB</div>
+            <textarea class="companyinfo" rows="6" cols="28">
+[Your Job Description]
+            </textarea>
+        </div>
+        <div class="clear"></div>
       <table id="data">
+        <thead>
+          <tr>
+            <th id="qty">Qty</th>
+            <th id="description">Description</th>
+            <th id="price">Unit Price</th>
+            <th id="total">Line Total</th>
+          </tr>          
+        </thead>
         <tbody>
-          <tr>
-            <th>Qty</th>
-            <th>Description</th>
-            <th>Unit Price</th>
-            <th>Line Total</th>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
           </tr>
-          <tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-rowwhite">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-roworange">
-                <td class="qty">
-                  <textarea></textarea>
-                </td>
-                <td class="description">
-                  <textarea></textarea>
-                </td>
-                <td class="price">
-                  <textarea></textarea>
-                </td>
-                <td class="total">
-                  <textarea></textarea>
-                </td>
-            </tr>              
-            <tr class="data-rowbottom">
-              <td class="qty">
-                <textarea></textarea>
-              </td>
-              <td class="description">
-                <textarea></textarea>
-              </td>
-              <td class="price">
-                <textarea></textarea>
-              </td>
-              <td class="total">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-subtotal">
-              <td class="qty"></td>
-              <td class="description"></td>
-              <td class="subtotal">Subtotal</td>
-              <td class="subtotalinfo">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-taxes">
-              <td class="qty"></td>
-              <td class="description"></td>
-              <td class="taxes">Sales Tax</td>
-              <td class="taxesinfo">
-                <textarea></textarea>
-              </td>
-            </tr>
-            <tr class="data-total">
-              <td class="qty"></td>
-              <td class="description"></td>
-              <td class="total">Total</td>
-              <td class="totalinfo">
-                <textarea></textarea>
-              </td>
-            </tr>                                    
-          </tbody>                                        
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr> 
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr> 
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr> 
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td>
+              <div class="wrapper">
+                <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>
+            <td>
+              <div class="wrapperlast">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td id="subtotal" colspan="3">Subtotal</td>
+            <td>
+              <div class="wrapperlast">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-rowwhite">
+            <td id="taxes" colspan="3">Sales Tax</td>
+            <td>
+              <div class="wrapper">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>
+          <tr class="data-roworange">
+            <td id="finaltotal" colspan="3">Total</td>
+            <td>
+              <div class="wrapperbottom">
+              <input type="text" />
+              </div>
+            </td>              
+          </tr>                                                                                         
+        </tbody>                                        
       </table>  
       <div id="payable">Make all checks payable to 
-        <textarea>[Your Company Name]</textarea>
+        <input type="text" value="[Your Company Name]" />
       </div>
       <div id="thankyou">Thank you for your business!</div>
     </div>

@@ -2,94 +2,46 @@ body {
   background-color: white; 
 }
 #pagewrap {
-  margin: 0 auto 60px auto;
+  margin: 0 auto 30px auto;
   width: 800px;
 }
 #workorder {
   text-align: right;
   font-size: 60px;
   color: #b7b7b7;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #logo { 
-  text-align: right; 
-  float: left; 
-  position: relative; 
-  margin-top: 25px; 
-  border: 1px solid #fff; 
-  max-width: 360px; 
-  max-height: 100px; 
+  text-align: left; 
+  float: left;
+  width: 600px;
   overflow: hidden; 
   }
-#logo:hover, #logo.edit { 
-  border: 1px solid #000; 
-  margin-top: 0px; 
-  max-height: 125px; 
-  }
-#logoctr { 
-  display: none; 
-  }
-#logo:hover #logoctr, #logo.edit #logoctr { 
-  display: block; 
-  text-align: right; 
-  line-height: 25px; 
-  background: #eee; 
-  padding: 0 5px; 
-  }
-#logohelp { 
-  text-align: left; 
-  display: none; 
-  font-style: italic; 
-  padding: 10px 5px;
-  }
-#logohelp input { 
-  margin-bottom: 5px; 
-  }
-.edit #logohelp { 
-  display: block; 
-  }
-.edit #save-logo, .edit #cancel-logo { 
-  display: inline; 
-  }
-.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { 
-  display: none; 
-  }
-#slogan {
-  float: left;
-  text-align: left;
-  margin-top: 100px;
-  width: 380px;
-  height: 14px;
-}
-#compslogan {
-  width: 380px;
-  font-style: italic;
-}
-#meta {
-  margin-top: 90px; 
-  width: 150px; 
+#meta { 
+  width: 170px; 
   float: right; 
-}
-#meta td { 
-  text-align: right;  
 }
 #meta td.meta-head { 
   text-align: right;
   color: #984806;
-  width: 40px;
+  width: 60px;
   height: 16px; 
 }
-#meta td textarea { 
-  width: 100%; 
+#meta td input {
+  width: 100%;  
   height: 16px; 
-  text-align: right; 
+  text-align: right;
+  border: 0px;
+  padding: 0px; 
+}
+#meta td input:hover {
+  background: #ecf170;
 }
 table {
   border-collapse: collapse;
 }
 table td, table th { 
-  border: none
-  padding: 5px; 
+  border: none 
 }
 textarea  {
   border:0 none;
@@ -100,155 +52,129 @@ textarea  {
   padding:0;
 }
 #line {
-  float: left;
-  background-image: url(images/line.jpg);
-  height: 10px;
+  margin-top: 15px;
+  background-color:#984806;
+  height: 1.5px;
   width: 800px;
 }
-#companyinfo {
+.companyinfo {
   float: left;
   margin-top: 30px;
-  color: #7e7e7e;
-  height: 110px;
-  width: 235px;
   text-align: left;
 }
-#to {
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
-  color: #984806;
+.companyinfo:hover {
+  background: #ecf170;
 }
-#customerinfo {
+.label {
   float: left;
-  margin-top: 30px;
-  margin-left: 10px;
-  color: #7e7e7e;
-  height: 110px;
-  width: 235px;
-  text-align:left;
-}
-#job {
-  float: left;
-  margin-top: 30px;
-  margin-left: 20px;
+  padding-top: 30px;
+  margin-right: 5px;
   color: #984806;
 }
 #jobdesc {
   float: left;
-  margin-top: 28px;
-  margin-left: 10px;
+  margin-top: 30px;
   height: 14px;
   width: 220px;
   text-align:left;
+  border: 0px;
+}
+#jobdesc:hover {
+  background: #ecf170;
 }
 #data {
-  clear: both;
   margin-top: 30px;
-  width: 100%;
 }
 #data th {
   background-color: #984705;
   color: white;
   font-weight: bold;
-  padding-left: 15px;
-  border-style: solid;
-  border-color: #984705;
-  border-width: 1px;
-  
+  padding: 5px 5px 5px 15px;
+  border: 1px solid #ffffff;
+  border-top: 1px solid #984705;
 }
-#data textarea {
-  height: 20px;
+th#qty {
   width: 80px;
+  border-left: 1px solid #984705;
+}
+#description {
+  width: 400px;
+}
+#price {
+  width: 160px;
+}
+th#total {
+  width: 160px;
+  border-right: 1px solid #984705;
+}
+#data input {
   background: transparent;
-  padding-left: 5px;
+  border: 0px;
+  width: 100%;
+}
+#data td:hover,
+#data tr.data-roworange td:hover {
+  background: #ecf170;
+}
+.wrapper {
+  padding: 5px;
+}
+#data tr td {
+  border-right: 1px solid #984806;
+  border-left: 1px solid #984806;
 }
 #data tr.data-rowwhite td {
   border-style: none solid;
-  border-color: #984705;
-  border-width: 1px;
-  padding-left: 5px;
 }
 #data tr.data-roworange td {
   border-style: none solid;
-  border-color: #984705;
-  border-width: 1px;
   background-color: #fde9d8;
-  padding-left: 5px;
 }
-#data tr.data-rowbottom td {
-  border-style: none solid solid solid;
-  border-color: #984705;
-  border-width: 1px;
-  padding-left: 5px;
-}
-#data td.qty {
-  width: 80px;
-}
-#data td.description {
-  width:400px;
-}
-#data td.price {
-  width: 160px;
-}
-#data td.total {
-  width:160px;
-}
-#data td.description textarea, #data td.price textarea, #data td.total textarea, #data td.subtotalinfo textarea,
-#data td.taxesinfo textarea, #data td.totalinfo textarea {
-  width: 100%;
-}
-#data td.subtotal {
-  width: 160px;
+#data tr.data-roworange td#subtotal {
   color: #7e7e7e;
   text-align: right;
+  background: #ffffff;
+  border-top: 1px solid #984705;
+  border-left: 0;
   padding-right: 10px;
 }
-#data td.subtotalinfo {
-  width: 160px;
-  background-color: #fde9d8;
-  border-style: none solid solid solid;
-  border-color: #984705;
-  border-width: 1px;
-  padding-left: 5px;
-}
-#data td.taxes {
-  width: 160px;
+#data tr.data-rowwhite td#taxes {
   color: #7e7e7e;
   text-align: right;
+  margin-right: 10px;
+  border-left: 0;
   padding-right: 10px;
 }
-#data td.taxesinfo {
-  width: 160px;
-  border-style: none solid solid solid;
-  border-color: #984705;
-  border-width: 1px;
-  padding-left: 5px;
+#data tr.data-rowwhite td#taxes:hover {
+  background: #ffffff;
 }
-#data td.total {
-  width: 160px;
+#data tr.data-roworange td#finaltotal {
   color: #7e7e7e;
   text-align: right;
+  margin-right: 10px;
+  border-left: 0;
   padding-right: 10px;
+  background: #ffffff;
 }
-#data td.totalinfo {
-  width: 160px;
-  background-color: #fde9d8;
-  border-style: none solid solid solid;
+.wrapperlast {
+    padding: 5px;
+    border-bottom: 1px solid #984705;
+}
+.wrapperbottom {
+  padding: 5px;
+  border-style: solid none;
   border-color: #984705;
   border-width: 1px;
-  padding-left: 5px;
 }
 #payable {
-  margin-top: 30px;
+  padding-top: 30px;
   text-align: center;
-  color: #7e7e7e;
 }
-#payable textarea {
-  color: #7e7e7e;
-  height: 16px;
-  width: 140px;
-  vertical-align: bottom;
+#payable input {
+  border: 0;
+}
+#payable input:hover {
+  background: #ecf170;
 }
 #thankyou {
   margin-top: 5px;
@@ -258,12 +184,6 @@ textarea  {
   font-style: italic;
   font-family:"Verdana", Verdana, Sans-serif;
 }
-.same {
-  background-color: yellow;
-}
 .clear {
   clear: both;
-}
-#button {
-  margin-top: 5px;
 }
