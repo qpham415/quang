@@ -1,0 +1,116 @@
+body {
+  background-color: white; 
+}
+#pagewrap {
+  margin: 0 auto;
+  width: 800px;
+}
+#workorder {
+  text-align: right;
+  font-size: 60px;
+  color: #b7b7b7;
+  margin-top: 120px;
+}
+#logo { 
+  text-align: right; 
+  float: left; 
+  position: relative; 
+  margin-top: 25px; 
+  border: 1px solid #fff; 
+  max-width: 360px; 
+  max-height: 100px; 
+  overflow: hidden; 
+  }
+#logo:hover, #logo.edit { 
+  border: 1px solid #000; 
+  margin-top: 0px; 
+  max-height: 125px; 
+  }
+#logoctr { 
+  display: none; 
+  }
+#logo:hover #logoctr, #logo.edit #logoctr { 
+  display: block; 
+  text-align: right; 
+  line-height: 25px; 
+  background: #eee; 
+  padding: 0 5px; 
+  }
+#logohelp { 
+  text-align: left; 
+  display: none; 
+  font-style: italic; 
+  padding: 10px 5px;
+  }
+#logohelp input { 
+  margin-bottom: 5px; 
+  }
+.edit #logohelp { 
+  display: block; 
+  }
+.edit #save-logo, .edit #cancel-logo { 
+  display: inline; 
+  }
+.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { 
+  display: none; 
+  }
+#slogan {
+  float: left;
+  text-align: left;
+  margin-top: 100px;
+  width: 380px;
+  height: 14px;
+}
+#compslogan {
+  width: 380px;
+  font-style: italic;
+}
+#meta {
+  margin-top: 90px; 
+  width: 150px; 
+  float: right; 
+}
+#meta td { 
+  text-align: right;  
+}
+#meta td.meta-head { 
+  text-align: right;
+  color: #984806;
+  width: 40px;
+  height: 16px; 
+}
+#meta td textarea { 
+  width: 100%; 
+  height: 16px; 
+  text-align: right; 
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th { 
+  border: none
+  padding: 5px; 
+}
+textarea  {
+  border:0 none;
+  overflow: hidden;
+}
+* {
+  margin:0;
+  padding:0;
+}
+#line {
+  float: left;
+  background-image: url(images/line.jpg);
+  height: 10px;
+  width: 800px;
+}  
+.same {
+  background-color: yellow;
+}
+.clear {
+  clear: both;
+}
+#button {
+  margin-top: 5px;
+}

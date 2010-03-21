@@ -1,0 +1,269 @@
+body {
+  background-color: white; 
+}
+#pagewrap {
+  margin: 0 auto 60px auto;
+  width: 800px;
+}
+#workorder {
+  text-align: right;
+  font-size: 60px;
+  color: #b7b7b7;
+  margin-top: 100px;
+}
+#logo { 
+  text-align: right; 
+  float: left; 
+  position: relative; 
+  margin-top: 25px; 
+  border: 1px solid #fff; 
+  max-width: 360px; 
+  max-height: 100px; 
+  overflow: hidden; 
+  }
+#logo:hover, #logo.edit { 
+  border: 1px solid #000; 
+  margin-top: 0px; 
+  max-height: 125px; 
+  }
+#logoctr { 
+  display: none; 
+  }
+#logo:hover #logoctr, #logo.edit #logoctr { 
+  display: block; 
+  text-align: right; 
+  line-height: 25px; 
+  background: #eee; 
+  padding: 0 5px; 
+  }
+#logohelp { 
+  text-align: left; 
+  display: none; 
+  font-style: italic; 
+  padding: 10px 5px;
+  }
+#logohelp input { 
+  margin-bottom: 5px; 
+  }
+.edit #logohelp { 
+  display: block; 
+  }
+.edit #save-logo, .edit #cancel-logo { 
+  display: inline; 
+  }
+.edit #image, #save-logo, #cancel-logo, .edit #change-logo, .edit #delete-logo { 
+  display: none; 
+  }
+#slogan {
+  float: left;
+  text-align: left;
+  margin-top: 100px;
+  width: 380px;
+  height: 14px;
+}
+#compslogan {
+  width: 380px;
+  font-style: italic;
+}
+#meta {
+  margin-top: 90px; 
+  width: 150px; 
+  float: right; 
+}
+#meta td { 
+  text-align: right;  
+}
+#meta td.meta-head { 
+  text-align: right;
+  color: #984806;
+  width: 40px;
+  height: 16px; 
+}
+#meta td textarea { 
+  width: 100%; 
+  height: 16px; 
+  text-align: right; 
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th { 
+  border: none
+  padding: 5px; 
+}
+textarea  {
+  border:0 none;
+  overflow: hidden;
+}
+* {
+  margin:0;
+  padding:0;
+}
+#line {
+  float: left;
+  background-image: url(images/line.jpg);
+  height: 10px;
+  width: 800px;
+}
+#companyinfo {
+  float: left;
+  margin-top: 30px;
+  color: #7e7e7e;
+  height: 110px;
+  width: 235px;
+  text-align: left;
+}
+#to {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #984806;
+}
+#customerinfo {
+  float: left;
+  margin-top: 30px;
+  margin-left: 10px;
+  color: #7e7e7e;
+  height: 110px;
+  width: 235px;
+  text-align:left;
+}
+#job {
+  float: left;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: #984806;
+}
+#jobdesc {
+  float: left;
+  margin-top: 28px;
+  margin-left: 10px;
+  height: 14px;
+  width: 220px;
+  text-align:left;
+}
+#data {
+  clear: both;
+  margin-top: 30px;
+  width: 100%;
+}
+#data th {
+  background-color: #984705;
+  color: white;
+  font-weight: bold;
+  padding-left: 15px;
+  border-style: solid;
+  border-color: #984705;
+  border-width: 1px;
+  
+}
+#data textarea {
+  height: 20px;
+  width: 80px;
+  background: transparent;
+  padding-left: 5px;
+}
+#data tr.data-rowwhite td {
+  border-style: none solid;
+  border-color: #984705;
+  border-width: 1px;
+  padding-left: 5px;
+}
+#data tr.data-roworange td {
+  border-style: none solid;
+  border-color: #984705;
+  border-width: 1px;
+  background-color: #fde9d8;
+  padding-left: 5px;
+}
+#data tr.data-rowbottom td {
+  border-style: none solid solid solid;
+  border-color: #984705;
+  border-width: 1px;
+  padding-left: 5px;
+}
+#data td.qty {
+  width: 80px;
+}
+#data td.description {
+  width:400px;
+}
+#data td.price {
+  width: 160px;
+}
+#data td.total {
+  width:160px;
+}
+#data td.description textarea, #data td.price textarea, #data td.total textarea, #data td.subtotalinfo textarea,
+#data td.taxesinfo textarea, #data td.totalinfo textarea {
+  width: 100%;
+}
+#data td.subtotal {
+  width: 160px;
+  color: #7e7e7e;
+  text-align: right;
+  padding-right: 10px;
+}
+#data td.subtotalinfo {
+  width: 160px;
+  background-color: #fde9d8;
+  border-style: none solid solid solid;
+  border-color: #984705;
+  border-width: 1px;
+  padding-left: 5px;
+}
+#data td.taxes {
+  width: 160px;
+  color: #7e7e7e;
+  text-align: right;
+  padding-right: 10px;
+}
+#data td.taxesinfo {
+  width: 160px;
+  border-style: none solid solid solid;
+  border-color: #984705;
+  border-width: 1px;
+  padding-left: 5px;
+}
+#data td.total {
+  width: 160px;
+  color: #7e7e7e;
+  text-align: right;
+  padding-right: 10px;
+}
+#data td.totalinfo {
+  width: 160px;
+  background-color: #fde9d8;
+  border-style: none solid solid solid;
+  border-color: #984705;
+  border-width: 1px;
+  padding-left: 5px;
+}
+#payable {
+  margin-top: 30px;
+  text-align: center;
+  color: #7e7e7e;
+}
+#payable textarea {
+  color: #7e7e7e;
+  height: 16px;
+  width: 140px;
+  vertical-align: bottom;
+}
+#thankyou {
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-style: italic;
+  font-family:"Verdana", Verdana, Sans-serif;
+}
+.same {
+  background-color: yellow;
+}
+.clear {
+  clear: both;
+}
+#button {
+  margin-top: 5px;
+}
