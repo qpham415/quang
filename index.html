@@ -57,6 +57,7 @@ Customer ID [ABC123]</textarea>
       <table id="data">
         <thead>
           <tr>
+            <th id="cancelh"></th>
             <th id="qty">Qty</th>
             <th id="description">Description</th>
             <th id="price">Unit Price</th>
@@ -64,7 +65,10 @@ Customer ID [ABC123]</textarea>
           </tr>          
         </thead>
         <tbody>
-          <tr class="data-rowwhite">
+          <tr class="odd data-row">
+            <td class="cancelcell">
+               <a class="cancel" href="javascript:;" ></a>
+            </td>
             <td>
               <div class="wrapper">
                 <input type="text" />
@@ -86,7 +90,10 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-roworange">
+          <tr class="even data-row">
+            <td class="cancelcell">
+               <a class="cancel" href="javascript:;" ></a>
+            </td>
             <td>
               <div class="wrapper">
                 <input type="text" />
@@ -108,7 +115,10 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-rowwhite">
+          <tr class="odd data-row">
+            <td class="cancelcell">
+               <a class="cancel" href="javascript:;" ></a>
+            </td>
             <td>
               <div class="wrapper">
                 <input type="text" />
@@ -130,29 +140,10 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
+          <tr class="even data-row" id="fakerow">
+            <td class="cancelcell">
+               <a class="cancel" href="javascript:;" ></a>
             </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr> 
-          <tr class="data-rowwhite">
             <td>
               <div class="wrapper">
                 <input type="text" />
@@ -174,447 +165,10 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
+          <tr class="odd">
+            <td id="add" colspan="4"><a id="addrow" href="javascript:;">Add Row</a></td>             
           </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr> 
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr> 
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-rowwhite">
-            <td>
-              <div class="wrapper">
-                <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapper">
-              <input type="text" />
-              </div>
-            </td>
-            <td>
-              <div class="wrapperlast">
-              <input type="text" />
-              </div>
-            </td>              
-          </tr>
-          <tr class="data-roworange">
+          <tr class="even">
             <td id="subtotal" colspan="3">Subtotal</td>
             <td>
               <div class="wrapperlast">
@@ -622,7 +176,7 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-rowwhite">
+          <tr class="odd">
             <td id="taxes" colspan="3">Sales Tax</td>
             <td>
               <div class="wrapper">
@@ -630,7 +184,7 @@ Customer ID [ABC123]</textarea>
               </div>
             </td>              
           </tr>
-          <tr class="data-roworange">
+          <tr class="even">
             <td id="finaltotal" colspan="3">Total</td>
             <td>
               <div class="wrapperbottom">

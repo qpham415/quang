@@ -85,6 +85,21 @@ textarea  {
 #data {
   margin-top: 30px;
 }
+#data th#cancelh {
+  background: 0;
+  border: 0;
+  width: 16px;
+  padding: 0;
+}
+#data td.cancelcell {
+  border: 0;
+}
+.cancel {
+  background: url('images/cancel.png') no-repeat;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
 #data th {
   background-color: #984705;
   color: white;
@@ -94,7 +109,7 @@ textarea  {
   border-top: 1px solid #984705;
 }
 th#qty {
-  width: 80px;
+  width: 64px;
   border-left: 1px solid #984705;
 }
 #description {
@@ -113,7 +128,7 @@ th#total {
   width: 100%;
 }
 #data td:hover,
-#data tr.data-roworange td:hover {
+#data tr.even td:hover {
   background: #ecf170;
 }
 .wrapper {
@@ -123,14 +138,14 @@ th#total {
   border-right: 1px solid #984806;
   border-left: 1px solid #984806;
 }
-#data tr.data-rowwhite td {
+#data tr.odd td {
   border-style: none solid;
 }
-#data tr.data-roworange td {
+#data tr.even td {
   border-style: none solid;
   background-color: #fde9d8;
 }
-#data tr.data-roworange td#subtotal {
+#data tr.even td#subtotal {
   color: #7e7e7e;
   text-align: right;
   background: #ffffff;
@@ -138,17 +153,23 @@ th#total {
   border-left: 0;
   padding-right: 10px;
 }
-#data tr.data-rowwhite td#taxes {
+#data tr.odd td#add {
+  padding: 5px 0;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #984705;
+}
+#data tr.odd td#taxes {
   color: #7e7e7e;
   text-align: right;
   margin-right: 10px;
   border-left: 0;
   padding-right: 10px;
 }
-#data tr.data-rowwhite td#taxes:hover {
+#data tr.odd td#taxes:hover {
   background: #ffffff;
 }
-#data tr.data-roworange td#finaltotal {
+#data tr.even td#finaltotal {
   color: #7e7e7e;
   text-align: right;
   margin-right: 10px;
@@ -183,6 +204,9 @@ th#total {
   font-size: 1.1em;
   font-style: italic;
   font-family:"Verdana", Verdana, Sans-serif;
+}
+#fakerow {
+  display:none;
 }
 .clear {
   clear: both;
