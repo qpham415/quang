@@ -3,7 +3,7 @@ body {
 }
 #pagewrap {
   margin: 0 auto 30px auto;
-  width: 800px;
+  width: 820px;
 }
 #workorder {
   text-align: right;
@@ -14,9 +14,9 @@ body {
 #logo { 
   text-align: left; 
   float: left;
-  width: 600px;
-  overflow: hidden; 
-  }
+  margin-left: 20px;
+  width: 600px; 
+}
 #meta { 
   width: 170px; 
   float: right; 
@@ -24,38 +24,25 @@ body {
 #meta td.meta-head { 
   text-align: right;
   color: #984806;
-  width: 60px;
-  height: 16px; 
+  width: 60px; 
 }
 #meta td input {
-  width: 100%;  
-  height: 16px; 
+  width: 100%;   
   text-align: right;
   border: 0px;
-  padding: 0px; 
+  padding: 2px; 
 }
 #meta td input:hover {
   background: #ecf170;
 }
-table {
-  border-collapse: collapse;
-}
-table td, table th { 
-  border: none 
-}
-textarea  {
-  border:0 none;
-  overflow: hidden;
-}
-* {
-  margin:0;
-  padding:0;
-}
 #line {
-  margin-top: 15px;
+  margin: 15px 0 0 20px;
   background-color:#984806;
   height: 1.5px;
   width: 800px;
+}
+#label-left {
+  margin-left: 20px;
 }
 .companyinfo {
   float: left;
@@ -71,121 +58,91 @@ textarea  {
   margin-right: 5px;
   color: #984806;
 }
-#jobdesc {
-  float: left;
-  margin-top: 30px;
-  height: 14px;
-  width: 220px;
-  text-align:left;
-  border: 0px;
-}
-#jobdesc:hover {
-  background: #ecf170;
-}
 #data {
   margin-top: 30px;
 }
+#data th {
+  background-color: #984705;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px solid #ffffff;
+  border-top: 1px solid #984705;
+  text-align: center;
+}
 #data th#cancelh {
-  background: 0;
+  background: #ffffff;
   border: 0;
-  width: 16px;
+  width: 20px;
   padding: 0;
 }
-#data td.cancelcell {
+#data th#qty {
+  width: 60px;
+  border-left: 1px solid #984705;
+}
+#data #description {
+  width: 400px;
+}
+#data th#price {
+  width: 160px;
+}
+#data th#total {
+  width: 160px;
+  border-right: 1px solid #984705;
+}
+#data td {
+  border-right: 1px solid #984806;
+  border-left: 1px solid #984806;
+  border-style: none solid;
+}
+#data input {
+  background: transparent;
+  border: 0px;
+  width: 100%;
+  text-align: center;
+}
+#data tr.even td {
+  background-color: #fde9d8;
+}
+#data tr td.cancelcell {
+  width: 20px;
   border: 0;
+  background: #ffffff;
+}
+#data td:hover, #data tr.even td:hover {
+  background: #ecf170;
 }
 .cancel {
   background: url('images/cancel.png') no-repeat;
   display: block;
   width: 16px;
   height: 16px;
-}
-#data th {
-  background-color: #984705;
-  color: white;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  border: 1px solid #ffffff;
-  border-top: 1px solid #984705;
-}
-th#qty {
-  width: 64px;
-  border-left: 1px solid #984705;
-}
-#description {
-  width: 400px;
-}
-#price {
-  width: 160px;
-}
-th#total {
-  width: 160px;
-  border-right: 1px solid #984705;
-}
-#data input {
-  background: transparent;
-  border: 0px;
-  width: 100%;
-}
-#data td:hover,
-#data tr.even td:hover {
-  background: #ecf170;
+  margin: auto;
 }
 .wrapper {
   padding: 5px;
 }
-#data tr td {
-  border-right: 1px solid #984806;
-  border-left: 1px solid #984806;
-}
-#data tr.odd td {
-  border-style: none solid;
-}
-#data tr.even td {
-  border-style: none solid;
-  background-color: #fde9d8;
-}
-#data tr.even td#subtotal {
-  color: #7e7e7e;
-  text-align: right;
-  background: #ffffff;
-  border-top: 1px solid #984705;
-  border-left: 0;
-  padding-right: 10px;
-}
-#data tr.odd td#add {
-  padding: 5px 0;
+#data td#add {
+  padding: 5px;
   text-align: left;
-  background: #ffffff;
   border: 1px solid #984705;
 }
-#data tr.odd td#taxes {
-  color: #7e7e7e;
-  text-align: right;
-  margin-right: 10px;
-  border-left: 0;
-  padding-right: 10px;
-}
-#data tr.odd td#taxes:hover {
+#data td#add:hover, #data tr.even td.cancelcell {
   background: #ffffff;
 }
-#data tr.even td#finaltotal {
+#fakerow {
+  display:none;
+}
+#data td#subtotal, #data td#taxes, #data td#finaltotal {
   color: #7e7e7e;
   text-align: right;
-  margin-right: 10px;
+  background: #ffffff;
   border-left: 0;
   padding-right: 10px;
-  background: #ffffff;
-}
-.wrapperlast {
-    padding: 5px;
-    border-bottom: 1px solid #984705;
 }
 .wrapperbottom {
   padding: 5px;
-  border-style: solid none;
-  border-color: #984705;
-  border-width: 1px;
+  border-bottom: 1px solid #984705;
 }
 #payable {
   padding-top: 30px;
@@ -205,8 +162,21 @@ th#total {
   font-style: italic;
   font-family:"Verdana", Verdana, Sans-serif;
 }
-#fakerow {
-  display:none;
+#data td.nocancel, #data tr.even td.nocancel {
+  width: 20px;
+  border: 0;
+  background: white;
+}
+table {
+  border-collapse: collapse;
+}
+textarea  {
+  border:0 none;
+  overflow: hidden;
+}
+* {
+  margin:0;
+  padding:0;
 }
 .clear {
   clear: both;

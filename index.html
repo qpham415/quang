@@ -32,7 +32,7 @@
       </div>
         <div id="line"></div>
         <div id="address">
-          <div class="label">FROM</div>
+          <div class="label" id="label-left">FROM</div>
             <textarea class="companyinfo" rows="6" cols="34">
 [Your Company Name] 
 [Street Address] 
@@ -71,7 +71,7 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-                <input type="text" />
+                <input type="text" class="qty-value"/>
               </div>
             </td>
             <td>
@@ -81,12 +81,12 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="price-value"/>
               </div>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="linetotal" />
               </div>
             </td>              
           </tr>
@@ -96,7 +96,7 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-                <input type="text" />
+                <input type="text" class="qty-value"/>
               </div>
             </td>
             <td>
@@ -106,12 +106,12 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="price-value"/>
               </div>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="linetotal" />
               </div>
             </td>              
           </tr>
@@ -121,7 +121,7 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-                <input type="text" />
+                <input type="text" class="qty-value"/>
               </div>
             </td>
             <td>
@@ -131,12 +131,12 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="price-value"/>
               </div>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="linetotal" />
               </div>
             </td>              
           </tr>
@@ -146,7 +146,7 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-                <input type="text" />
+                <input type="text" class="qty-value"/>
               </div>
             </td>
             <td>
@@ -156,39 +156,43 @@ Customer ID [ABC123]</textarea>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="price-value"/>
               </div>
             </td>
             <td>
               <div class="wrapper">
-              <input type="text" />
+              <input type="text" class="linetotal" />
               </div>
             </td>              
           </tr>
-          <tr class="odd">
+          <tr>
+            <td class="nocancel"></td>
             <td id="add" colspan="4"><a id="addrow" href="javascript:;">Add Row</a></td>             
           </tr>
           <tr class="even">
+            <td class="nocancel"></td>
             <td id="subtotal" colspan="3">Subtotal</td>
             <td>
-              <div class="wrapperlast">
-              <input type="text" />
+              <div class="wrapperbottom">
+              <input type="text" id="subtotal-value"/>
               </div>
             </td>              
           </tr>
-          <tr class="odd">
+          <tr>
+            <td class="nocancel"></td>
             <td id="taxes" colspan="3">Sales Tax</td>
             <td>
-              <div class="wrapper">
-              <input type="text" />
+              <div class="wrapperbottom">
+              <input type="text" id="tax-value"/>
               </div>
             </td>              
           </tr>
           <tr class="even">
+            <td class="nocancel"></td>
             <td id="finaltotal" colspan="3">Total</td>
             <td>
               <div class="wrapperbottom">
-              <input type="text" />
+              <input type="text" id="total-value"/>
               </div>
             </td>              
           </tr>                                                                                         
