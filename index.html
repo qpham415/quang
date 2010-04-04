@@ -4,9 +4,18 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta name="description" content="Fillable Template: Work Order" />
     <link rel="stylesheet" href="/reset-fonts-grids.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />	
     <script type='text/javascript' src='/jquery-1.4.2.js'></script>
     <script type='text/javascript' src='/script.js'></script>
+  	<link type="text/css" href="/ui/ui-lightness/jquery.ui.all.css" rel="stylesheet" />
+  	<script type="text/javascript" src="/ui/jquery.ui.core.js"></script>
+  	<script type="text/javascript" src="/ui/jquery.ui.datepicker.js"></script>
+  	<link type="text/css" href="../demos.css" rel="stylesheet" />
+  	<script type="text/javascript">
+  	$(function() {
+  		$("#datepicker").datepicker();
+  	});
+  	</script>    
     <title>Work Order</title>
   </head>
   <body>
@@ -20,7 +29,9 @@
           <tbody>
             <tr>
               <td class="meta-head">Date</td>
-              <td><input type="text" value="[Enter a Date]" /></td>
+              <td>
+                <input type="text" id="datepicker" value="[Enter a Date]" />
+              </td>
             </tr>
             <tr>
               <td class="meta-head">W.O. #</td>

@@ -125,7 +125,7 @@ $(document).ready(function(){
   $('#data .qty-value').live('blur',update_line);
   $('#data .price-value').live('blur',update_line);
   $('#data .linetotal').live('change',function(){
-      update_subtotal(); 
+    update_subtotal(); 
   });
   $('#data #tax-value').live('change',function(){ 
     update_finaltotal();
