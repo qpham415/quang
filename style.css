@@ -34,6 +34,11 @@ body {
 #imageinput {
   margin: 8px 0 0 3px;
 }
+#imageinstr {
+  margin: 10px 0 0 3px;
+  font-style: italic;
+  font-weight: bold;
+}
 #meta { 
   width: 170px; 
   float: right; 
