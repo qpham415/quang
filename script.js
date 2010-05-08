@@ -45,68 +45,35 @@ function roundNumber(number,decimals) {
   //var newNumber = Number(newString);// make it a number if you like
   return newString; // Output the result to the form field (for your purpose)
 }
-//function update_total() {
-//  var total = 0;
-//  $('.price').each(function(i){
-//    price = $(this).html().replace("$","");
-//    if (!isNaN(price)) total += Number(price);
-//  });
-//
-//  total = roundNumber(total,2);
-//
-//  $('#subtotal').html("$"+total);
-//  $('#total').html("$"+total);
-//  
-//  update_balance();
-//}
-//
-//function update_balance() {
-//  var due = $("#total").html().replace("$","") - $("#paid").val().replace("$","");
-//  due = roundNumber(due,2);
-//
-//  $('.due').html("$"+due);
-//}
-//
-//function update_price() {
-//  var row = $(this).parents('.item-row');
-//  var price = row.find('.cost').val().replace("$","") * row.find('.qty').val();
-//  price = roundNumber(price,2);
-//  isNaN(price) ? row.find('.price').html("N/A") : row.find('.price').html("$"+price);
-//  
-//  update_total();
-//}
-//
-//function bind() {
-//  $(".cost").blur(update_price);
-//  $(".qty").blur(update_price);
-//}
+function to_currency (number) {
+  var number = roundNumber(number,2);
+  number = "$"+number;
+  return number;
+}
+function to_float (number) {
+  var number = parseFloat(number.replace('$',''));
+  return number;
+}
 function update_line () {
   var row = $(this).parents('.data-row');
   var linetotal_value =  row.find('.qty-value').val() * row.find('.price-value').val();
-  linetotal_value = roundNumber(linetotal_value,2);
-  row.find('.linetotal').val(linetotal_value);
+  row.find('.linetotal').val(to_currency(linetotal_value));
   update_subtotal();
 }
 function update_subtotal () {
   var subtotal_value = 0;
   $('#data .linetotal').map(function(){
-    if (!isNaN(parseFloat($(this).val()))) {
-      subtotal_value += parseFloat($(this).val());
+    var money = to_float($(this).val());
+    if (!isNaN(money)) {
+      subtotal_value += money;
     }
   });
-  subtotal_value = roundNumber(subtotal_value,2);
-  $('#data #subtotal-value').val(subtotal_value);
+  $('#data #subtotal-value').val(to_currency(subtotal_value));
   update_finaltotal();
 }
 function update_finaltotal () {  
-  if (isNaN(parseFloat($('#data #tax-value').val()))) {
-    var zero = 0;
-    zero = roundNumber(zero,2);
-    $('#data #tax-value').val(zero);
-  }
-  var finaltotal = parseFloat($('#data #subtotal-value').val()) + parseFloat($('#data #tax-value').val());
-  finaltotal = roundNumber(finaltotal,2);
-  $('#data #total-value').val(finaltotal);  
+  var finaltotal = to_float($('#data #subtotal-value').val()) + to_float($('#data #tax-value').val());
+  $('#data #total-value').val(to_currency(finaltotal));
 }
 $(document).ready(function(){
   $('#image').click(function(){
@@ -122,12 +89,13 @@ $(document).ready(function(){
     cycle();
     update_subtotal();
   });
-  $('#data .qty-value').live('blur',update_line);
-  $('#data .price-value').live('blur',update_line);
+  $('#data .qty-value').live('change',update_line);
+  $('#data .price-value').live('change',update_line);
   $('#data .linetotal').live('change',function(){
     update_subtotal(); 
   });
-  $('#data #tax-value').live('change',function(){ 
+  $('#data #tax-value').live('change',function(){
+    $(this).val(to_currency($(this).val())); 
     update_finaltotal();
   });
 });
