@@ -90,7 +90,10 @@ $(document).ready(function(){
     update_subtotal();
   });
   $('#data .qty-value').live('change',update_line);
-  $('#data .price-value').live('change',update_line);
+  $('#data .price-value').live('change',function(){
+    $(this).val(to_currency($(this).val())); 
+    update_line();
+  });
   $('#data .linetotal').live('change',function(){
     update_subtotal(); 
   });
