@@ -79,6 +79,27 @@ function update_finaltotal () {
 $(document).ready(function(){
   $('#image').click(function(){
     $(this).hide();
+    $('#logoclick').show();
+  });
+  $('#deletelogo').click(function(){
+    $('#logoclick').hide();
+  });
+  $('#cancellogo').click(function(){
+    $('#logoclick').hide();
+    $('#image').show();
+  });
+  $('#changelogo').click(function(){
+    $('#logoclick').hide();
+    $('#changeform').show();
+  });
+  $('#changecancel').click(function(){
+    $('#changeform').hide();
+    $('#logoclick').show();
+  })
+  $("#changesave").click(function(){
+    $("#image").attr('src',$("#imageloc").val());
+    $('#changeform').hide();
+    $('#image').show();
   });
   $('#addrow').click(function(){
     $('#fakerow').before($('#fakerow').clone().attr('id','').show());

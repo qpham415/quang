@@ -17,6 +17,23 @@ body {
   margin-left: 20px;
   width: 600px; 
 }
+#logoclick, #changeform {
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+  width: 600px;
+  height: 100px;
+  display: none;
+}
+.logobutton {
+  border: 1px solid black;
+  padding: 5px;
+  margin-left: 3px;
+  float: left;
+}
+#imageinput {
+  margin: 8px 0 0 3px;
+}
 #meta { 
   width: 170px; 
   float: right; 

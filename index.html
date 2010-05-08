@@ -3,8 +3,8 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta name="description" content="This is a fillable and printable work order / invoice. No download required. Automatic math calculation." />
-    <link rel="stylesheet" href="/reset-fonts-grids.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />	
+    <link rel="stylesheet" href="/reset-fonts-grids.css" type="text/css" />
+    <link rel="stylesheet" href="/style.css" type="text/css" />	
     <script type='text/javascript' src='/jquery-1.4.2.js'></script>
     <script type='text/javascript' src='/script.js'></script>
   	<link type="text/css" href="/ui/ui-lightness/jquery.ui.all.css" rel="stylesheet" />
@@ -15,7 +15,17 @@
   	$(function() {
   		$("#datepicker").datepicker();
   	});
-  	</script>    
+  	</script>
+  	<style>
+    @media print {
+      #addrow {
+        display: none;
+      }
+      #data th {
+        border: 1px solid #984705;
+      } 
+    }
+    </style>    
     <title>Online Invoice</title>
   </head>
   <body>
@@ -23,8 +33,19 @@
       <div id="workorder">Work Order</div>
       <div id="header">
         <div id="logo">
-          <img id="image" src="images/logo.jpg" alt="logo" />
+          <img id="image" src="images/logo.jpg" alt="logo" height=100px />
         </div>
+        <div id="logoclick">
+          <div class="logobutton"><a id="changelogo" href="javascript:;">Change Logo</a></div>
+          <div class="logobutton"><a id="deletelogo" href="javascript:;">Delete Logo</a></div>
+          <div class="logobutton"><a id="cancellogo" href="javascript:;">Cancel</a></div>
+        </div>
+        <div id="changeform">
+          <div class="logobutton"><a id="changesave" href="javascript:;">Save Logo</a></div>
+          <div class="logobutton"><a id="changecancel" href="javascript:;">Cancel</a></div>
+          <div class="clear"></div>
+          <div id="imageinput"><input id="imageloc" type="text" value="" size="50"></div>
+        </div>  
         <table id="meta">
           <tbody>
             <tr>
