@@ -51,12 +51,13 @@ function to_currency (number) {
   return number;
 }
 function to_float (number) {
+  if (!number) return 0;
   var number = parseFloat(number.replace('$',''));
   return number;
 }
-function update_line () {
-  var row = $(this).parents('.data-row');
-  var linetotal_value =  row.find('.qty-value').val() * row.find('.price-value').val();
+function update_line (target) {
+  var row = $(target).parents('.data-row');
+  var linetotal_value =  row.find('.qty-value').val() * to_float(row.find('.price-value').val());
   row.find('.linetotal').val(to_currency(linetotal_value));
   update_subtotal();
 }
@@ -80,7 +81,7 @@ $(document).ready(function(){
     $(this).hide();
   });
   $('#addrow').click(function(){
-    $('#fakerow').before($('#fakerow').clone().show());
+    $('#fakerow').before($('#fakerow').clone().attr('id','').show());
     cycle();
     update_subtotal();
   });
@@ -89,10 +90,12 @@ $(document).ready(function(){
     cycle();
     update_subtotal();
   });
-  $('#data .qty-value').live('change',update_line);
-  $('#data .price-value').live('change',function(){
+  $('#data .qty-value').live('change',function(e){
+    update_line(this);
+  });
+  $('#data .price-value').live('change',function(e){
     $(this).val(to_currency($(this).val())); 
-    update_line();
+    update_line(this);
   });
   $('#data .linetotal').live('change',function(){
     update_subtotal(); 
